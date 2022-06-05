@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <title>GPA Calculator</title>
+        <meta content="GPA Calculator" name="description">
+    <meta content="" name="keywords">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/gallary.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="/img/title.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <script src="/vendor/aos/aos.js"></script>       
+
+  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-calculator"></i>
+          GPA Calculator
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOME
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#Calculate">GPA</a></li>
+                  <li><a class="dropdown-item" href="#Gallery">Gallery</a></li>
+                  <li><a class="dropdown-item" href="#data">Table</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#contact">Contact US</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music.html">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vedio.html">Vedio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="time.html">Time</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="home">
+    <div class="container">
+      <div class="right" data-aos="fade-left">
+      </div>
+      <div class="left" data-aos="fade-right">
+        <div class="content">
+          <h1>GPA Calculator</h1>
+          <p>this app is designed for colleges that have a 4 point GPA</p>
+          <a href="#Calculate" class="btn" id="myBtn">Calculate <i class="bi bi-arrow-down-short"></i></a>
+        </div>
+      </div>
+
+              <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Ahmed Hesham sad doban</h2>
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <center>
+                  <p>SECTION  : 2</p>
+                  <p>Tell us how are you satisfied</p>
+                  <p id="rate"></p>
+                  <ul id="listy" onchange="change()">
+                    <li>
+                      <input type="radio" value="😒" name="1" id="😒" hidden/>
+                      <label for="😒">&#8533;</label>
+                    </li>
+                    <li>                   
+                      <input type="radio" value="🙂" name="1" id="🙂" hidden/>
+                      <label for="🙂">&#8534;</label></li>
+                    <li>
+                      <input type="radio" value="😊" name="1" id="😊" hidden/>
+                      <label for="😊">&#8535;</label>
+                    </li>
+                    <li>
+                      <input type="radio" value="😉" name="1" id="😉" hidden/>
+                      <label for="😉">&#8536;</label>
+  
+                    </li>
+                    <li>
+                      <input type="radio" value="😍" name="1" id="😍" hidden/>
+                      <label for="😍">⅟</label>
+                    </li>
+                 </ul>
+                 </center>
+                 
+              </div>
+            </div>
+
+          </div>
+    </div>
+  </div>
+  </header>
+
+<section id="Calculate" class="Calculate">
+  <div class="container" data-aos="fade-up">
+      <div class="section-title">
+          <h2>Calculateion</h2>
+          <p>please Enter the require  </p>
+      </div>
+  </div>
+
+  <div class="row" id="calv">
+    <div class="col-sm-8" data-aos="fade-right">
+      <table class="table" id="data">
+        <thead>
+          <tr>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Hour</th>
+            <th scope="col">Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input id="CourseName" type="text" class="form-control" placeholder="Course Name" aria-label="Text input with dropdown button"></td>
+            <td><input id="CourseHour" type="number" max="5" min="0" class="form-control" placeholder="Course Hour" aria-label="Text input with dropdown button"></td>
+            <td>
+              <select id="GRADE" class="form-select" aria-label="Default select example">
+                <option selected value="0" disabled>Grade</option>
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.7">A-</option>
+                <option value="3.3">B+</option>
+                <option value="3">B</option>
+                <option value="2.7">B-</option>
+                <option value="2.3">C+</option>
+                <option value="2">C</option>
+                <option value="1.7">C-</option>
+                <option value="1.3">D+</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+              </select>
+             </td>
+          </tr>
+       </tbody>
+      </table>
+    </div>
+
+    <div class="col-sm-2"  data-aos="fade-left">
+      <div class="d-grid gap-2" >
+        <button class="btn btn-primary" type="button" onclick="ADD()" style="background-color: #728394;">ADD</button>
+        <button class="btn btn-primary" type="button" onclick="Calc()"style="background-color: #728394;">Calculate</button>
+    
+      </div>
+
+      <div class="circle-wrap" id="prosses" style="display: none;" data-aos="fade-up-left">
+        <div class="circle">
+          <div class="mask full">
+            <div class="fill"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill"></div>
+          </div>
+          <div class="inside-circle"> GPA <p class="output"></p> </div>
+        </div>
+      </div> 
+      
+    
+      
+    </div>
+</div>
+</section>
+    <!-- ======= Gallery Section ======= -->
+<section id="Gallery" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Gallery</h2>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col" data-aos="zoom-in-up">
+      <center>
+        <input class="form-control me-2" type="text" id="myInput" onkeyup="SearchFunction()" placeholder="Search for names.." style="width: 80%;">
+      </center>
+      <ul id="myUL" class="row"data-aos="zoom-out">   
+
+          <li class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in">
+              <div class="portfolio-wrap">
+                <img src="/img/wallpaper/one.jpg" alt="one punch man" class="img-fluid" >
+                <div class="portfolio-info">
+                  <h4>one punch man</h4>       
+                  <div class="portfolio-links">
+                    <a href="#Gallery"   onclick="openModal();currentSlide(1)"><i class="bx bx-plus"></i></a>
+                   </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-out-down">          
+              <div class="portfolio-wrap">
+                <img src="/img/wallpaper/hxh (2).jpg" alt="Hunter x Hunter" class="img-fluid">
+                <div class="portfolio-info">
+                  <h4>Hunter x Hunter</h4>       
+                  <div class="portfolio-links">
+                    <a href="#Gallery"   onclick="openModal();currentSlide(2)"><i class="bx bx-plus"></i></a>
+                   </div>
+                </div>
+              </div>
+          </li>
+
+
+          <li class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="/img/wallpaper/conan (1).jpg" alt="Detective Conan" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Detective Conan</h4>       
+                  <div class="portfolio-links">
+                    <a href="#Gallery"  onclick="openModal();currentSlide(3)" ><i class="bx bx-plus"></i></a>
+                   </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="/img/wallpaper/conan (2).jpg" alt="Detective Conan" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Detective Conan</h4>       
+                <div class="portfolio-links">
+                  <a href="#Gallery"  onclick="openModal();currentSlide(4)" ><i class="bx bx-plus"></i></a>
+                 </div>
+              </div>
+            </div>
+        </li>
+
+        <li class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="/img/wallpaper/conan (4).jpg" alt="Detective Conan" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Detective Conan</h4>       
+              <div class="portfolio-links">
+                <a href="#Gallery" data-min-width="600px"  onclick="openModal();currentSlide(5)" ><i class="bx bx-plus"></i></a>
+               </div>
+            </div>
+          </div>
+      </li>
+
+        </div>
+      </ul>
+
+
+      <div id="myModal2" class="modal2">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="/img/wallpaper/one.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="/img/wallpaper/hxh (2).jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="/img/wallpaper/conan (1).jpg" style="width:100%">
+          </div>
+
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="/img/wallpaper/conan (2).jpg" style="width:100%">
+          </div>
+
+          
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="/img/wallpaper/conan (4).jpg" style="width:100%">
+          </div>
+          
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+    </div>
+</section>
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="row mt-1">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+                <a href="https://goo.gl/maps/sroomfEm3k15dAhG7">
+                    <i class="bi bi-geo-alt"></i>
+                </a>
+              <h4>Location</h4>
+              <p>El salam first ,Cairo</p>
+            </div>
+
+            <div class="email">
+              <a href="mailto:ahmedzoro323@gmail.com">
+                  <i class="bi bi-envelope"></i>
+              </a>
+            <h4>Email</h4>
+            <p>ahmedzoro323@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <a href="tel:+201555894860">
+                <i class="bi bi-phone"></i>
+            </a>
+            <h4>Call</h4>
+            <p>01555894860</p>
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" id="textaria"  required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center"><button type="button" onclick="changeCal()">Change style</button></div>
+              </div>
+            </div>
+          
+          </form>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+    <footer id="footer">
+      <div class="container">
+        <h3>Ahmed Hesham Sad Doban</h3>
+      </div>
+      <p>you can follow me in this sites</p>   
+      <div class="social-links">
+        <a href="https://twitter.com/ahmed_doban" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/ahmed.doban.56" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/ahmeddoban/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=201555894860&text&app_absent=0" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/ahmeddoban" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/AhmedDoban" class="linkedin"><i class="bx bxl-github"></i></a>
+      </div>
+
+
+    </footer><!-- End Footer -->
+<script src="/JS/gallary.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+
+<body>
+  
+

@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Ubuntu' , sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #dde1e7; */
+      background-image: url('/img/blur\ back.jpg');
+    transition: all .3s linear;
+  }
+  .container {
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73 ,2px 2px 3px rgba(94,104,121,0.288);
+  }
+  .container .img-ico{
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+      border-radius: 50px;
+  }
+  .container a{
+    background-color: #728394;
+    padding: 15px;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 5px;
+  }
+  .container a i{
+    margin: 25px 0 25px 0;
+  }
+  
+  .txt{
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #ffffff73;
+    border-radius: 12px;
+    box-shadow:-3px -3px 7px #ffffff73 inset ,2px 2px 3px rgba(94,104,121,0.288) inset;
+    
+  }
+
+  button[type=submit],button[type=button],container a{
+    background: #728394;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 15px;
+  }
+  button[type=submit]:hover,button[type=button]:hover, .container a:hover {
+    background: #0678e3;
+    color: #fff;
+  }
+  p #register{
+    background-color: unset;
+    padding: 0%;
+    margin:0;
+    text-decoration: none;
+  }
+  p #register:hover{
+    color: #fff;
+  }
+
+  

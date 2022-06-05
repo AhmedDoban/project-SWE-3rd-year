@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Ubuntu' , sans-serif;
+    padding: 0;
+    margin: 0;
+    
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/blur\ back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .5s linear;
+    background-size: cover;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  }
+  h1 ,h2{
+      color: #fafafa;
+  }
+  .container {
+    
+    width: 320px;
+    height: 580px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73 ,2px 2px 3px rgba(94,104,121,0.288);
+  }
+  .container .img-ico{
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+      border-radius: 50px;
+  }
+
+  p{
+    color: rgb(77, 77, 77);
+      font-size: 15px;
+      padding-top: 15px;
+  }
+  
+  .txt{
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #ffffff73;
+    border-radius: 12px;
+    box-shadow:-3px -3px 7px #ffffff73 inset ,2px 2px 3px rgba(94,104,121,0.288) inset;  
+    
+  }
+
+  button[type=submit],button[type=button],container a{
+    background: #0678e3;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 15px;
+  }
+  button[type=submit]:hover,button[type=button]:hover, .container a:hover {
+    background: #06c93d73;
+    color: #fff;
+  }
+
+  
+  .profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .profile-pic input {
+    display: none;
+  }
+  .profile-pic img {
+    position: absolute;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+    border-radius: 100px;
+    z-index: 0;
+  }
+  .profile-pic .-label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+  }
+  .profile-pic:hover .-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    color: #fafafa;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+  }
+  .profile-pic span {
+    display: inline-flex;
+    padding: 0.2em;
+    height: 2em;
+  }
+  p #signin{
+    background-color: unset;
+    padding: 0%;
+    margin:0;
+    text-decoration: none;
+  }
+  p #logsigninin:hover{
+    color: #fff;
+  }
